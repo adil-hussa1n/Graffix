@@ -1,0 +1,49 @@
+.about-us {
+  padding: 60px 0;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.lead {
+  font-size: 1.2rem;
+  color: #b0b0b0;
+}
+
+.custom-divider {
+  border-top: 2px solid #868282;
+  width: 100%;
+  margin: 40px auto;
+}
+
+img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.text-muted {
+  color: #b0b0b0;
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,62 @@
+/* Skills.css */
+.service-card {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    max-width: 350px; 
+    padding: 40px; 
+    height: auto; 
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+  }
+  
+  .icon-container {
+    animation: icon-bounce 1.5s infinite;
+  }
+  
+  .learn-more-btn {
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Animation for icons */
+  @keyframes icon-bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #fbbf24; /* Yellow for active dots */
+  }
+  
+  .slick-dots li button:before {
+    color: #fff;
+    font-size: 12px;
+  }
+  
+  @media (max-width: 1024px) {
+    .service-card {
+      max-width: 300px;
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .service-card {
+      max-width: 250px;
+      padding: 12px;
+    }
+    
+    h5 {
+      font-size: 2xl;
+    }
+    
+    p {
+      font-size: 1rem;
+    }
+  }
+  

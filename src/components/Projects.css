@@ -1,0 +1,21 @@
+.custom-tab {
+    color: white !important;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+  }
+  
+  .custom-tab.active {
+    color: yellow !important;
+    background-color: #333 !important;
+    border: 2px solid yellow !important;
+  }
+  
+  .custom-tab:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: yellow !important;
+    border: 2px solid yellow !important;
+  }
