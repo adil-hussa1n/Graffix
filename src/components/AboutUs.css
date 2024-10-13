@@ -1,49 +1,56 @@
 .about-us {
-  padding: 60px 0;
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+  background: #000000;
 }
 
 .section-heading {
   font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 20px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
   text-transform: uppercase;
+  position: relative;
+  z-index: 1;
 }
 
-.lead {
-  font-size: 1.2rem;
-  color: #b0b0b0;
+.section-heading::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #ffcc00;
+  margin: 1rem auto 0;
+  transition: width 0.3s;
 }
 
-.custom-divider {
-  border-top: 2px solid #868282;
-  width: 100%;
-  margin: 40px auto;
+.custom-card {
+  background-color: #1a1a1a;
+  border: none;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-img {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
-img:hover {
-  transform: scale(1.05);
+.custom-card .card-title {
+  font-size: 1.5rem;
+  color: #ffcc00;
 }
 
-h3 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-}
-
-.text-muted {
-  color: #b0b0b0;
+.card-text {
+  color: #ccc;
 }
 
 @media (max-width: 768px) {
-  h3 {
-    font-size: 1.5rem;
+  .section-heading {
+    font-size: 2rem;
   }
 
-  .lead {
-    font-size: 1rem;
+  .custom-card .card-title {
+    font-size: 1.3rem;
   }
 }
+

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { Container, Row, Col } from "react-bootstrap"
-import headerImg from "../assets/img/header-img.svg"
+import headerImg from "../assets/img/rocket-01.png"
 import { ArrowRightCircle } from "react-bootstrap-icons"
 import "animate.css"
 import TrackVisibility from "react-on-screen"
@@ -64,16 +64,17 @@ export const Banner = () => {
                   }
                 >
                   <span className='tagline'>Welcome to Graffix</span>
-                  <h1>
-                    {`Hey! We're Team Graffix `}{" "}
+                  <h2 className='h2-typing'>
+                    {`Hey! We're Team Graffix `}
+                    <br />
                     <span
                       className='txt-rotate'
-                      dataPeriod='1000'
-                      data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
+                      dataPeriod={period}
+                      data-rotate={toRotate.join("|")}
                     >
                       <span className='wrap'>{text}</span>
                     </span>
-                  </h1>
+                  </h2>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
@@ -88,13 +89,14 @@ export const Banner = () => {
               )}
             </TrackVisibility>
           </Col>
-          <Col xs={12} md={6} xl={5}>
+          <Col xs={12} md={6} xl={5} className='d-flex justify-content-end'>
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
                   className={
                     isVisible ? "animate__animated animate__zoomIn" : ""
                   }
+                  style={{ width: "90%" }}
                 >
                   <img src={headerImg} alt='Header Img' />
                 </div>

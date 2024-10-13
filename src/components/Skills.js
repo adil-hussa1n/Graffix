@@ -2,10 +2,9 @@ import React from 'react';
 import Slider from 'react-slick';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faPalette, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
-import './Skills.css'; 
+import './Skills.css';
 
 export const Skills = () => {
-
   const services = [
     {
       title: 'Web Development',
@@ -35,7 +34,7 @@ export const Skills = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    cssEase: "linear",
+    cssEase: 'linear',
     responsive: [
       {
         breakpoint: 1024,
@@ -57,20 +56,20 @@ export const Skills = () => {
   return (
     <section className="services py-20 bg-black text-white relative rounded-lg overflow-hidden" id="service">
       <div className="container mx-auto px-4 text-center">
-      <h2 className="text-6xl font-extrabold text-yellow-400 mb-12 mt-16">Our Services</h2>
+        <h2 className="text-6xl font-extrabold text-yellow-400 mb-12 mt-16">Our Services</h2>
         <p className="text-2xl mb-16 text-gray-300">We offer a wide range of services to help your business succeed.</p>
 
         {/* Carousel */}
         <Slider {...settings}>
           {services.map((service, index) => (
             <div key={index} className="p-8">
-              <div className="service-card flex flex-col items-center p-10 rounded-lg bg-gradient-to-r from-gray-700 to-gray-900 shadow-2xl transition-transform duration-500 hover:scale-105 hover:rotate-1">
-                <div className="icon-container mb-8 w-32 h-32 bg-gray-800 rounded-full flex items-center justify-center">
+              {/* Add margin to create gap between the cards */}
+              <div className="service-card flex flex-col items-center p-10 rounded-lg shadow-2xl transition-transform duration-500 hover:scale-105 hover:rotate-1 mx-4">
+                <div className="icon-container mb-8">
                   <FontAwesomeIcon icon={service.icon} size="3x" className={`${service.color}`} />
                 </div>
                 <h5 className="text-3xl font-bold text-white mb-6">{service.title}</h5>
                 <p className="text-gray-400 text-lg leading-relaxed mb-8 text-center">{service.description}</p>
-              
               </div>
             </div>
           ))}

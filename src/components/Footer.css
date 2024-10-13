@@ -1,0 +1,42 @@
+.footer {
+    background: linear-gradient(135deg, #000000, #000000);
+    padding: 8px;
+  }
+
+  .footer-logo {
+    max-width: 150px;
+  }
+
+  .social-icon a {
+    color: #f1f1f1;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .social-icon a:hover {
+    color: #ffd700;
+    transform: scale(1.2);
+  }
+
+  .text-gray-400 {
+    color: #b5b5b5;
+  }
+
+  @media (max-width: 768px) {
+    .footer-logo {
+      margin-bottom: 20px;
+    }
+
+    .social-icon a {
+      margin: 0 10px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .social-icon a {
+      margin: 0 8px;
+    }
+
+    .footer p {
+      font-size: 14px;
+    }
+  }
