@@ -32,7 +32,7 @@
 }
 
 .contact .submit-btn {
-    background-color: #ffcc00;
+    background-color: #f39c12;
     color: #000;
     border: none;
     padding: 10px 20px;
@@ -43,7 +43,7 @@
 }
 
 .contact .submit-btn:hover {
-    background-color: #ffdb4d;
+    background-color: #e1b400;
 }
 
 .contact .success {

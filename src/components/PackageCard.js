@@ -11,7 +11,7 @@ export const PackageCard = ({ title, price, features }) => {
             <li key={index}>{feature}</li>
           ))}
         </ul>
-        <button className="btn btn-primary mt-3" style={{display: 'block', margin: 'auto'}}>Learn More</button>
+        <a href="#contact" className="btn btn-primary mt-3" style={{display: 'block', margin: 'auto'}}>Learn More</a>
       </div>
     </div>
   );

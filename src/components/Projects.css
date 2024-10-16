@@ -9,13 +9,16 @@
   }
   
   .custom-tab.active {
-    color: yellow !important;
+    color: #f39c12 !important;
     background-color: #333 !important;
-    border: 2px solid yellow !important;
+    border: 2px solid #f39c12 !important;
   }
   
   .custom-tab:hover {
     background-color: rgba(255, 255, 255, 0.1);
-    color: yellow !important;
-    border: 2px solid yellow !important;
+    color: #f39c12 !important;
+    border: 2px solid #f39c12 !important;
+  }
+  h2{
+    color: #f39c12 !important;
   }

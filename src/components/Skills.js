@@ -68,7 +68,7 @@ export const Skills = () => {
                 <div className="icon-container mb-8">
                   <FontAwesomeIcon icon={service.icon} size="3x" className={`${service.color}`} />
                 </div>
-                <h5 className="text-3xl font-bold text-white mb-6">{service.title}</h5>
+                <h5 className="text-3xl font-bold mb-6">{service.title}</h5>
                 <p className="text-gray-400 text-lg leading-relaxed mb-8 text-center">{service.description}</p>
               </div>
             </div>

@@ -23,11 +23,11 @@ export const NavBar = () => {
     window.addEventListener("scroll", onScroll);
 
     return () => window.removeEventListener("scroll", onScroll);
-  }, [])
+  }, []);
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
-  }
+  };
 
   return (
     <Router>
@@ -47,7 +47,7 @@ export const NavBar = () => {
               <Nav.Link href="#package" className={activeLink === 'package' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('package')}>Packages</Nav.Link>
             </Nav>
             <span className="navbar-text">
-              <HashLink to='#connect'>
+              <HashLink to='#contact'>
                 <button className="vvd"><span>Let’s Connect</span></button>
               </HashLink>
             </span>
@@ -55,5 +55,5 @@ export const NavBar = () => {
         </Container>
       </Navbar>
     </Router>
-  )
-}
+  );
+};

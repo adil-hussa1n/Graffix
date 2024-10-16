@@ -1,13 +1,9 @@
-/* Skills.css */
-
-/* Service section background */
 .services {
   padding: 5rem 1rem;
   background-color: #0d0d0d;
   color: #fff;
 }
 
-/* Card container */
 .service-card {
   padding: 2.5rem;
   background: linear-gradient(145deg, #1a1a1a, #333);
@@ -21,14 +17,14 @@
   text-align: center;
 }
 
-/* On hover, scale up the card slightly and deepen the shadow */
+
 .service-card:hover {
   transform: translateY(-10px) scale(1.05);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6), 0 8px 8px rgba(0, 0, 0, 0.2);
   background: linear-gradient(145deg, #252525, #444);
 }
 
-/* Icon container with a rounded background */
+
 .icon-container {
   width: 6rem;
   height: 6rem;
@@ -42,21 +38,26 @@
   transition: background-color 0.4s;
 }
 
-/* Icon color changes on hover */
+
 .service-card:hover .icon-container {
   background-color: #2a2a2a;
 }
 
-/* Font styling for the title */
 h5 {
   font-size: 1.75rem;
   font-weight: bold;
-  color: #fff;
+  color: #f39c12 !important;
+  margin-bottom: 1rem;
+  transition: color 0.4s;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f39c12 !important;
   margin-bottom: 1rem;
   transition: color 0.4s;
 }
 
-/* Font styling for the description */
 p {
   font-size: 1rem;
   color: #b0b0b0;
@@ -64,12 +65,11 @@ p {
   margin-bottom: 1rem;
 }
 
-/* Hover color change for the title */
+
 .service-card:hover h5 {
   color: #ffd700;
 }
 
-/* Smaller screens adjustment */
 @media (max-width: 768px) {
   .service-card {
     padding: 2rem;

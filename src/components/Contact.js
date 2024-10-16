@@ -53,7 +53,7 @@ export const Contact = () => {
   };
 
   return (
-    <section className="contact" id="connect" style={{ backgroundColor: '#000', color: '#fff', padding: '50px 0' }}>
+    <section className="contact" id="contact" style={{ backgroundColor: '#000', color: '#fff', padding: '50px 0' }}>
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>

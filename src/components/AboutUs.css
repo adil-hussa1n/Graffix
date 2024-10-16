@@ -37,11 +37,14 @@
 
 .custom-card .card-title {
   font-size: 1.5rem;
-  color: #ffcc00;
+  color: #f39c12;
 }
 
 .card-text {
   color: #ccc;
+}
+h2,h3{
+  color: #f39c12;
 }
 
 @media (max-width: 768px) {
