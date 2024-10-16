@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #000000, #131942, #0c0c0c);
+    background: linear-gradient(135deg, #000000, #0f2540, #000000);
     background-size: 300% 300%;
     animation: gradientAnimation 6s ease infinite;
     z-index: 9999;
@@ -23,23 +23,19 @@
   .letter {
     opacity: 0;
     animation: fadeIn 0.5s forwards;
-    color: #29b6f6;
   }
   
-  .text-secondary {
-    color: #29b6f6;
+  .text-white {
+    color: white;
   }
-  .text-tertiary {
-    color: #ff4081;
+  .text-yellow {
+    color: #f39c12;
   }
   
   @keyframes fadeIn {
     0% {
       opacity: 0;
       transform: translateY(-20px);
-    }
-    50% {
-      opacity: 0.5;
     }
     100% {
       opacity: 1;
@@ -76,4 +72,3 @@
   .letter:nth-child(15) { animation-delay: 1.4s; }
   .letter:nth-child(16) { animation-delay: 1.5s; }
   .letter:nth-child(17) { animation-delay: 1.6s; }
-  
