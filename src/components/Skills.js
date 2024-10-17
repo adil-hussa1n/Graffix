@@ -10,19 +10,16 @@ export const Skills = () => {
       title: 'Web Development',
       description: 'Build responsive and dynamic websites that scale with your business.',
       icon: faCode,
-      color: 'text-blue-500',
     },
     {
       title: 'Graphic Design',
       description: 'Create visually stunning designs for print and digital media.',
       icon: faPalette,
-      color: 'text-green-500',
     },
     {
       title: 'UI/UX Design',
       description: 'Design intuitive, user-friendly interfaces for all platforms.',
       icon: faLaptopCode,
-      color: 'text-red-500',
     },
   ];
 
@@ -63,12 +60,11 @@ export const Skills = () => {
         <Slider {...settings}>
           {services.map((service, index) => (
             <div key={index} className="p-8">
-              {/* Add margin to create gap between the cards */}
               <div className="service-card flex flex-col items-center p-10 rounded-lg shadow-2xl transition-transform duration-500 hover:scale-105 hover:rotate-1 mx-4">
                 <div className="icon-container mb-8">
                   <FontAwesomeIcon icon={service.icon} size="3x" className={`${service.color}`} />
                 </div>
-                <h5 className="text-3xl font-bold mb-6">{service.title}</h5>
+                <h5 className="mb-6">{service.title}</h5>
                 <p className="text-gray-400 text-lg leading-relaxed mb-8 text-center">{service.description}</p>
               </div>
             </div>

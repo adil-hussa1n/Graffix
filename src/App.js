@@ -10,6 +10,8 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { About } from "./components/About";
 import Preloader from './components/Preloader';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 function App() {
   const [loading, setLoading] = useState(true);

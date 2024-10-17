@@ -23,7 +23,9 @@ export const About = () => {
           <Col md={12} lg={6}>
             <Card className="custom-card mb-4">
               <Card.Body>
-                <Card.Title className="text-uppercase fw-bold">Creative Expertise</Card.Title>
+                <Card.Title className="text-uppercase fw-bold">
+                  <i className="fas fa-lightbulb me-2"></i>Creative Expertise
+                </Card.Title>
                 <Card.Text>
                   Our team comprises seasoned professionals who thrive on creativity and innovation. We stay ahead of design trends to ensure your brand remains fresh and engaging.
                 </Card.Text>
@@ -35,7 +37,9 @@ export const About = () => {
           <Col md={12} lg={6}>
             <Card className="custom-card mb-4">
               <Card.Body>
-                <Card.Title className="text-uppercase fw-bold">Customized Solutions</Card.Title>
+                <Card.Title className="text-uppercase fw-bold">
+                  <i className="fas fa-cogs me-2"></i>Customized Solutions
+                </Card.Title>
                 <Card.Text>
                   We understand that every client is unique. Our services are tailored to meet your specific needs, whether you're a startup looking to establish your identity or an established brand seeking a refresh.
                 </Card.Text>
@@ -47,7 +51,9 @@ export const About = () => {
           <Col md={12} lg={6}>
             <Card className="custom-card mb-4">
               <Card.Body>
-                <Card.Title className="text-uppercase fw-bold">Collaborative Process</Card.Title>
+                <Card.Title className="text-uppercase fw-bold">
+                  <i className="fas fa-handshake me-2"></i>Collaborative Process
+                </Card.Title>
                 <Card.Text>
                   We believe in working closely with our clients throughout the project lifecycle. Your vision and feedback are integral to our process, ensuring the final product truly reflects your brand.
                 </Card.Text>
@@ -59,7 +65,9 @@ export const About = () => {
           <Col md={12} lg={6}>
             <Card className="custom-card mb-4">
               <Card.Body>
-                <Card.Title className="text-uppercase fw-bold">Comprehensive Services</Card.Title>
+                <Card.Title className="text-uppercase fw-bold">
+                  <i className="fas fa-briefcase me-2"></i>Comprehensive Services
+                </Card.Title>
                 <Card.Text>
                   From eye-catching graphic designs and memorable branding to functional websites and effective promotional campaigns, we offer a full suite of services to elevate your business.
                 </Card.Text>

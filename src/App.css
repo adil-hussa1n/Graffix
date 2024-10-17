@@ -72,7 +72,7 @@ input:focus, textarea:focus, select:focus {
   outline: none;
 }
 
-@media (min-width:1700px) {
+@media (min-width: 1700px) {
   main .container {
     max-width: 100%;
     padding: 0 150px;
@@ -219,6 +219,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+  nav.navbar a.navbar-brand {
+    width: 10%;
+  }
+}
+
 @media (max-width: 991px) {
   nav.navbar {
     padding: 25px 0;
@@ -281,7 +287,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner CSS ************/
 .banner {
   margin-top: 0;
-  padding: 300px 0;
+  padding: 200px 0;
   background-image: url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
@@ -358,78 +364,173 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /* Media Queries for Mobile Responsiveness */
+@media (max-width: 1200px) {
+  .banner {
+    padding: 200px 0;
+  }
+
+  .banner h1 {
+    font-size: 50px;
+  }
+
+  .banner p {
+    font-size: 16px;
+  }
+
+  .banner button {
+    margin-top: 45px;
+  }
+}
+
+@media (max-width: 991px) {
+  .banner {
+    padding: 180px 0;
+  }
+
+  .banner h1 {
+    font-size: 40px;
+  }
+
+  .banner p {
+    font-size: 15px;
+  }
+
+  .banner button {
+    margin-top: 40px;
+  }
+}
+
 @media (max-width: 768px) {
   .banner {
     padding: 150px 0;
   }
 
   .banner h1 {
-    font-size: 35px;
+    font-size: 36px;
+  }
+
+  .banner p {
+    font-size: 14px;
   }
 
   .banner button {
-    margin-top: 35px;
+    margin-top: 30px;
+    font-size: 18px;
   }
 }
 
 @media (max-width: 576px) {
   .banner {
-    padding: 100px 0;
+    padding: 130px 0;
   }
 
   .banner h1 {
-    font-size: 30px;
+    font-size: 32px;
+  }
+
+  .banner p {
+    font-size: 14px;
   }
 
   .banner button {
     margin-top: 25px;
+    font-size: 16px;
   }
 }
 
-/************ Card Component CSS ************/
+/************ Cards CSS ************/
 .cards {
   margin-top: 40px;
-  padding-bottom: 50px;
-  display: flex;
-  justify-content: center;
+  padding-bottom: 60px;
 }
 
 .cards .card {
-  background: #222;
-  color: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: all 0.4s ease;
-  margin: 10px;
   width: 100%;
   max-width: 300px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.cards .card img {
-  border-bottom: 1px solid #333;
-}
-
-.cards .card:hover {
-  transform: translateY(-10px);
+  background-color: #121212;
+  padding: 32px 24px;
+  border-radius: 24px;
+  margin: 0 10px;
 }
 
 .cards .card-title {
-  font-weight: 700;
-  padding: 20px;
-  font-size: 22px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
 }
 
 .cards .card-text {
-  padding: 0 20px 20px;
-  color: #B8B8B8;
   font-size: 16px;
+  color: #B8B8B8;
+  line-height: 1.5em;
 }
 
 .cards .card-footer {
-  padding: 10px 20px;
-  background: #333;
-  color: #fff;
-  font-weight: 600;
   font-size: 14px;
+  color: #B8B8B8;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+  .cards .card {
+    max-width: 280px;
+  }
+
+  .cards .card-title {
+    font-size: 20px;
+  }
+
+  .cards .card-text {
+    font-size: 15px;
+  }
+
+  .cards .card-footer {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 991px) {
+  .cards {
+    margin-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .cards .card {
+    max-width: 260px;
+  }
+
+  .cards .card-title {
+    font-size: 18px;
+  }
+
+  .cards .card-text {
+    font-size: 14px;
+  }
+
+  .cards .card-footer {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    margin-top: 25px;
+    padding-bottom: 35px;
+  }
+
+  .cards .card {
+    max-width: 240px;
+  }
+
+  .cards .card-title {
+    font-size: 16px;
+  }
+
+  .cards .card-text {
+    font-size: 13px;
+  }
+
+  .cards .card-footer {
+    font-size: 12px;
+  }
 }

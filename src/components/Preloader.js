@@ -12,16 +12,6 @@ function Loader() {
         <h1 className="letter text-white animate">f</h1>
         <h1 style={{color: "#f39c12"}} className="letter animate">i</h1>
         <h1 className="letter text-white animate">x</h1>
-        <h1 className="letter text-white animate">I</h1>
-        <h1 className="letter text-white animate">n</h1>
-        <h1 className="letter text-white animate">n</h1>
-        <h1 className="letter text-white animate">o</h1>
-        <h1 className="letter text-white animate">v</h1>
-        <h1 className="letter text-white animate">a</h1>
-        <h1 className="letter text-white animate">t</h1>
-        <h1 className="letter text-white animate">i</h1>
-        <h1 className="letter text-white animate">o</h1>
-        <h1 className="letter text-white animate">n</h1>
       </div>
     </div>
   );
