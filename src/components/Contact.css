@@ -31,6 +31,11 @@
     color: #aaa;
 }
 
+/* Adjust the message input box size */
+.contact .form-control[type="textarea"] {
+    min-height: 150px;
+}
+
 .contact .submit-btn {
     background-color: #f39c12;
     color: #000;
@@ -46,14 +51,31 @@
     background-color: #e1b400;
 }
 
-.contact .success {
-    color: #28a745;
+.contact .success,
+.contact .danger {
     text-align: center;
     margin-top: 20px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Hide success/danger message after 3 seconds */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.contact .success {
+    color: #28a745;
+    animation: fadeOut 3s forwards 3s; 
 }
 
 .contact .danger {
     color: #dc3545;
-    text-align: center;
-    margin-top: 20px;
+    animation: fadeOut 3s forwards 3s; 
 }

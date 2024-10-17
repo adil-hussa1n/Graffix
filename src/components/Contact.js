@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";  
 import { Container, Row, Col } from "react-bootstrap";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -29,11 +29,10 @@ export const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-
     
     emailjs.send(
-      'YOUR_SERVICE_ID', 
-      'YOUR_TEMPLATE_ID', 
+      'service_mh8a683', 
+      'template_ed42v6c', 
       {
         firstName: formDetails.firstName,
         lastName: formDetails.lastName,
@@ -41,14 +40,20 @@ export const Contact = () => {
         phone: formDetails.phone,
         message: formDetails.message
       },
-      'YOUR_PUBLIC_KEY' 
+      'PvjEJ5xYydvHCF_jy' 
     ).then((response) => {
       setButtonText("Send Message");
       setFormDetails(formInitialDetails);
       setStatus({ success: true, message: 'Message sent successfully!' });
+      setTimeout(() => {
+        setStatus({}); // Clear the message after 3 seconds
+      }, 3000);
     }).catch((error) => {
       setButtonText("Send Message");
       setStatus({ success: false, message: 'Something went wrong. Please try again.' });
+      setTimeout(() => {
+        setStatus({}); // Clear the message after 3 seconds
+      }, 3000);
     });
   };
 
@@ -120,6 +125,7 @@ export const Contact = () => {
                           onChange={(e) => onFormUpdate('message', e.target.value)} 
                           required
                           className="form-control"
+                          style={{ minHeight: '150px' }} // Increased size
                         ></textarea>
                         <button type="submit" className="submit-btn"><span>{buttonText}</span></button>
                       </Col>
