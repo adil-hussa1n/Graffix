@@ -10,17 +10,17 @@ export const Projects = () => {
     {
       title: "Basic",
       price: "Starting from $99",
-      features: [""],
+      features: [],
     },
     {
       title: "Advanced",
       price: "Starting from $349",
-      features: [""],
+      features: [],
     },
     {
       title: "Premium",
       price: "Starting from $999",
-      features: [""],
+      features: [],
     },
 
     // Design Packages
@@ -96,7 +96,7 @@ export const Projects = () => {
       title: "Based on Client Demand",
       description: "Our team of experts will help you achieve your goals.",
       price: "$ Negotiable Price",
-      features: [""],
+      features: [],
     },
   ];
 
